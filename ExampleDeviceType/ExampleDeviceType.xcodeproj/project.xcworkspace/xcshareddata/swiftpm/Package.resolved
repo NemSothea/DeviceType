@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "devicetype",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NemSothea/DeviceType.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e83839b4685d0b72080834a8d309765b22440b79"
+      }
+    }
+  ],
+  "version" : 2
+}
