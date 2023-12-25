@@ -46,7 +46,19 @@ let package = Package(
 Detect a current device and write log:
 
 ```swift
-DeviceType.isPhone()
+import DeviceType
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("Simulator : \(DeviceType.isSimulator())")
+        
+    }
+
+}
+
 ```
 
 ## iOS
@@ -83,7 +95,9 @@ func myFunc() {
             case .iPhone12:             print("It's an iPhone 12")                                                                        
             case .iPhone12Pro:          print("It's an iPhone 12 Pro")                                                                                    
             case .iPhone12ProMax:       print("It's an iPhone 12 Pro Max")                                                                                                
-        
+            case .iPhone13:                                                                                  
+            case .iPhone14:                                                                                          
+            case .iPhone15:      
 
             /*** iPad ***/
             case .iPad1:           print("It's an iPad 1")
