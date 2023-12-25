@@ -2,8 +2,9 @@
 #### **How to detect iOS device models and screen size?**
 ###### **DeviceType is detected the current  device model and screen sizes.**
 
-#### **How will try to update every  devices as soon as possible. 
+#### **We will try to update every  devices as soon as possible. 
 
+#### **Please feedback 🤩, like and share 🥳
 ```swift
 DeviceType.size()
 ```
@@ -34,7 +35,7 @@ to check the device type iPhone.
 ```swift
 let package = Package(
     dependencies: [
-        .package(url: "", ...)
+        .package(url: "https://github.com/NemSothea/Swift-Package-Manager.git", ...)
     ]
 )
 ```
@@ -45,7 +46,7 @@ let package = Package(
 Detect a current device and write log:
 
 ```swift
-DeviceType.current()
+DeviceType.isPhone()
 ```
 
 ## iOS
@@ -277,6 +278,8 @@ func myFunc() {
 
 NEM SOTHEA, nemsothea13@gmail.com
 
+## Apple Mobile Device Types 
+-> https://gist.github.com/adamawolf/3048717
 
 ## License
 

@@ -41,7 +41,7 @@ public struct DeviceType {
            //new version
            case "iPhone8,1":                               return .iPhone6S
            case "iPhone8,2":                               return .iPhone6SPlus
-           case "iPhone8,3", "iPhone8,4":                  return .iPhoneSE
+           case "iPhone8,3", "iPhone8,4","iPhone14,6":     return .iPhoneSE
            case "iPhone9,1", "iPhone9,3":                  return .iPhone7
            case "iPhone9,2", "iPhone9,4":                  return .iPhone7Plus
            case "iPhone10,1", "iPhone10,4":                return .iPhone8
@@ -58,7 +58,25 @@ public struct DeviceType {
            case "iPhone13,2":                              return .iPhone12
            case "iPhone13,3":                              return .iPhone12Pro
            case "iPhone13,4":                              return .iPhone12ProMax
-        
+               
+            // new version
+           case "iPhone14,2":                              return .iPhone13Pro
+           case "iPhone14,3":                              return .iPhone13ProMax
+           case "iPhone14,4":                              return .iPhone13Mini
+           case "iPhone14,5":                              return .iPhone13
+          
+           case "iPhone14,7":                              return .iPhone14
+           case "iPhone14,8":                              return .iPhone14Plus
+               
+           case "iPhone15,2":                              return .iPhone14Pro
+           case "iPhone15,3":                              return .iPhone14ProMax
+               
+           case "iPhone15,4":                              return .iPhone15
+           case "iPhone15,5":                              return .iPhone15Plus
+           case "iPhone16,1":                              return .iPhone15Pro
+           case "iPhone16,2":                              return .iPhone15ProMax
+               
+               
             //new version
         
                
@@ -124,7 +142,7 @@ public struct DeviceType {
            case "Watch5,10",  "Watch5,12":                   return .WatchSE44mm
 
            /*** Simulator ***/
-           case "i386", "x86_64":                           return .simulator
+           case "i386", "x86_64","arm64":                   return .simulator
                
            default:                                         return .unknown
            }
@@ -141,7 +159,7 @@ public struct DeviceType {
                return .iPod
            } else if versionCode.contains("Watch") {
                return .Watch
-           } else if versionCode == "i386" || versionCode == "x86_64" {
+           } else if versionCode == "i386" || versionCode == "x86_64"  || versionCode == "arm64" {
                return .simulator
            } else {
                return .unknown
